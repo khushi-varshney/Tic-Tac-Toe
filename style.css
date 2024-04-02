@@ -1,0 +1,139 @@
+*{
+    margin:0vw;
+    padding:0vw;
+}
+body{
+    border: 3px solid limegreen;
+    margin:0.5vw;
+    border-radius: 1%;
+    flex-wrap: wrap;
+}
+nav{
+    position: sticky;
+    background-color: khaki;
+    color: firebrick;
+    height:10vw;
+    display:flex;
+    align-items: center;
+    padding:1vw;
+    margin:1vw;
+    font-family: "Yeseva One", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:5vw;
+    text-decoration: underline;
+    text-align: center;
+    text-indent: 30%;
+
+}
+nav ul{
+    list-style-type: none;
+}
+.line{
+    transform: translate(10vw,13vw) rotate(90deg);
+    background-color: brown;
+    width: -2px;
+    transition : width 4sec ease-in-out;
+    left:0;
+    /* height:3px; */
+    position: absolute;
+}
+.game{
+     background-color: bisque;
+     display: flex;
+     margin:1vw;
+     padding: 1vw;
+     justify-content: center;
+}
+.container{
+    position: relative;
+    display:grid;
+    grid-template-rows: repeat(3,8vw);
+    grid-template-columns: repeat(3,8vw);
+    font-family: "Yeseva One", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:3vw;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 10%;
+}
+.container div{
+    border: 0.2vw solid purple;
+    border-radius: 10%;
+    font-size:6vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(151, 135, 113);
+}
+.info{
+    padding:2vw;
+    font-family: "Courgette", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(221, 128, 22);
+    font-size: 1.4vw;
+}
+img{
+    width: 0px;
+    transition : width 4sec ease-in-out;
+}
+
+.next{
+    margin-top: 20px;
+    padding:10px;
+}
+.infoe{
+    margin:2vw;
+    font-family: "Playfair Display", serif;
+    font-size: 2vw;
+    color: rgb(42, 46, 42);
+    font-weight: 600;
+}
+#reset{
+    /* margin:15px; */
+    padding:1vw;
+    border-radius: 20%;
+    font-family: "Anta", sans-serif;
+    font-size:1vw;
+    font-weight: 600;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    background-color: rgb(240, 197, 142);
+}
+#reset:hover{
+    background-color: burlywood;
+    font-size:1.5vw;
+}
+@media screen and (max-width: 800px)
+{
+    .game{
+        flex-wrap: wrap;
+        width:95%;
+        background-attachment: fixed;
+        
+    }
+    .info{
+        margin-top:34px;
+    }
+    .info h2{
+        font-size: 1rem;
+    }
+    .infoe{
+        font-size:1rem;
+    }
+    #reset{
+        font-size:1rem;
+    }
+    .container{
+        display:grid;
+        grid-template-rows: repeat(3, 10vw);
+        grid-template-columns: repeat(3,10vw);
+    }
+}
+
+
